@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "dev": "parcel static/index.html",
+    "build": "parcel --build static/index.html",
+    "pretest": "npm run lint && tsc --noEmit",
+    "lint": "eslint . --cache --fix --ext .ts,.tsx",
+    "format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\"",
+    "posttest": "npm run format"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.7.1",
+    "@typescript-eslint/parser": "^3.7.1",
+    "eslint": "^7.5.0",
+    "parcel": "^2.0.0-beta.1",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  }
+}
